@@ -56,13 +56,16 @@ void showWarning()
 }
 
 // Input validation loop (Ch. 5): keeps asking until the value is > 0.
+// cin.fail() catches letters like "abc" so the loop cannot run forever.
 double getPositive(const char prompt[])
 {
     double value;
     cout << prompt;
     cin >> value;
-    while (value <= 0)
+    while (cin.fail() || value <= 0)
     {
+        cin.clear();           // reset cin if letters were typed (Ch. 3)
+        cin.ignore(1000, '\n'); // throw away the bad input
         cout << "Error: amount must be greater than 0. Try again: $";
         cin >> value;
     }
@@ -75,8 +78,10 @@ int getYears()
     int years;
     cout << "Enter number of years (1-50): ";
     cin >> years;
-    while (years < 1 || years > 50)
+    while (cin.fail() || years < 1 || years > 50)
     {
+        cin.clear();
+        cin.ignore(1000, '\n');
         cout << "Error: enter a number from 1 to 50: ";
         cin >> years;
     }
