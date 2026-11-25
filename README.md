@@ -10,13 +10,22 @@ No graphics and no front end. Everything runs in the console.
 
 ## Folders
 
-| Folder | File | Status |
+See **`PLAN.md`** for the full plan, flowchart, and what the user enters and sees.
+
+| Folder | Files | Status |
 |---|---|---|
 | `01-user-login/` | `user_login.cpp` | Empty (planned) |
-| `02-dates/` | `dates.cpp` | Empty (planned) |
+| `02-dates/` | `dates.cpp` | Empty (planned, moves into 07) |
 | `03-sp500-simulation/` | `sp500_simulation.cpp` | Done: 7% per year + risk warning |
 | `04-bank-apy-simulation/` | `bank_apy_simulation.cpp` | Done: 0.5% per year |
+| `05-finance-types/` | `FinanceTypes.h` | Empty |
+| `06-main-controller/` | `main.cpp` | Empty |
+| `07-input-date-utils/` | `InputDateUtils.h`, `InputDateUtils.cpp` | Empty |
+| `08-budget-manager/` | `BudgetManager.h`, `BudgetManager.cpp` | Empty |
+| `09-investment-sim/` | `InvestmentSim.h`, `InvestmentSim.cpp` | Empty |
+| `10-file-manager/` | `FileManager.h`, `FileManager.cpp`, `expenses.csv`, `finance_report.txt` | Empty |
 
+Folders 05–10 follow the file layout from the Gemini project chat.
 Each folder has its own `README.md` with notes.
 
 ## Rates used
