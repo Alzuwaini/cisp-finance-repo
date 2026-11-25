@@ -14,8 +14,8 @@ See **`PLAN.md`** for the full plan, flowchart, and what the user enters and see
 
 | Folder | Files | Status |
 |---|---|---|
-| `01-user-login/` | `user_login.cpp` | Empty (planned) |
-| `02-dates/` | `dates.cpp` | Empty (planned, moves into 07) |
+| `01-user-login/` | `user_login.cpp` | Done: username + PIN, 3 tries |
+| `02-dates/` | `dates.cpp` | Done: leap years + time passed (moves into 07) |
 | `03-sp500-simulation/` | `sp500_simulation.cpp` | Done: 7% per year + risk warning |
 | `04-bank-apy-simulation/` | `bank_apy_simulation.cpp` | Done: 0.5% per year |
 | `05-finance-types/` | `FinanceTypes.h` | Empty |
